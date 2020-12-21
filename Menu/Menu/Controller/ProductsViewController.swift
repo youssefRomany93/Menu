@@ -21,6 +21,7 @@ class ProductsViewController: UIViewController {
     @IBOutlet var previousButton: AnimatableButton!
     @IBOutlet var nextButton: AnimatableButton!
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var emptyImageView: UIImageView!
     
     // Variables
     var page = 1
@@ -73,6 +74,9 @@ extension ProductsViewController{
                 }
             }
         if productsCategory.count == 0{
+            mainQueue {
+                self.emptyImageView.isHidden = false
+            }
             displayMessage(message: "There is no products in this category", messageError: false)
         }
         AllData = productsCategory
