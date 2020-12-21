@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Menu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLJ-Zf-8RJ" userLabel="containerView" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_noimg" translatesAutoresizingMaskIntoConstraints="NO" id="jPA-kd-35c">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="MiY-jE-lpk">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvn-yI-v5C">
+                                <rect key="frame" x="7" y="119.5" width="128" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jPA-kd-35c" secondAttribute="bottom" id="0bc-Qn-9jT"/>
+                            <constraint firstItem="Rvn-yI-v5C" firstAttribute="centerX" secondItem="CLJ-Zf-8RJ" secondAttribute="centerX" id="4rp-bD-LEo"/>
+                            <constraint firstAttribute="trailing" secondItem="jPA-kd-35c" secondAttribute="trailing" id="99x-xM-rOU"/>
+                            <constraint firstItem="Rvn-yI-v5C" firstAttribute="width" secondItem="CLJ-Zf-8RJ" secondAttribute="width" multiplier="0.9" id="AoG-aF-VDE"/>
+                            <constraint firstAttribute="bottom" secondItem="Rvn-yI-v5C" secondAttribute="bottom" constant="10" id="WgC-9F-XjH"/>
+                            <constraint firstAttribute="trailing" secondItem="MiY-jE-lpk" secondAttribute="trailing" id="Y68-mh-oji"/>
+                            <constraint firstAttribute="bottom" secondItem="MiY-jE-lpk" secondAttribute="bottom" id="e5L-IV-9pW"/>
+                            <constraint firstItem="MiY-jE-lpk" firstAttribute="top" secondItem="CLJ-Zf-8RJ" secondAttribute="top" id="jvO-Uu-igJ"/>
+                            <constraint firstItem="MiY-jE-lpk" firstAttribute="leading" secondItem="CLJ-Zf-8RJ" secondAttribute="leading" id="lQb-Kl-gYb"/>
+                            <constraint firstItem="jPA-kd-35c" firstAttribute="leading" secondItem="CLJ-Zf-8RJ" secondAttribute="leading" id="whP-gX-yn1"/>
+                            <constraint firstItem="jPA-kd-35c" firstAttribute="top" secondItem="CLJ-Zf-8RJ" secondAttribute="top" id="ytv-wT-u6H"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CLJ-Zf-8RJ" secondAttribute="trailing" id="3WK-ya-Did"/>
+                <constraint firstItem="CLJ-Zf-8RJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HVU-Hg-eyn"/>
+                <constraint firstItem="CLJ-Zf-8RJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mJQ-wq-RBa"/>
+                <constraint firstAttribute="bottom" secondItem="CLJ-Zf-8RJ" secondAttribute="bottom" id="vcx-fY-Iny"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="142" height="150"/>
+            <connections>
+                <outlet property="categoryImageView" destination="jPA-kd-35c" id="Ww7-pd-18L"/>
+                <outlet property="categoryNameLAbel" destination="Rvn-yI-v5C" id="ImT-CU-5t5"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="72"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_noimg" width="360" height="110.5"/>
+        <image name="home_shadow" width="360" height="65.5"/>
+    </resources>
+</document>

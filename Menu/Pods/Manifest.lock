@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (5.15.4):
+    - Kingfisher/Core (= 5.15.4)
+  - Kingfisher/Core (5.15.4)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - SwiftMessages (8.0.2):
+    - SwiftMessages/App (= 8.0.2)
+  - SwiftMessages/App (8.0.2)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - IBAnimatable
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - NVActivityIndicatorView
+  - SDWebImage/WebP
+  - SwiftMessages
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - libwebp
+    - NVActivityIndicatorView
+    - SDWebImage
+    - SwiftMessages
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 657dc1077e5bbbfff864194c79f29e35b722d062
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SwiftMessages: 633304165351b8e3dcbb81a71f8efcd86f9c1669
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 985504eb7410739b26fb02b0a3db804a59e72f79
+
+COCOAPODS: 1.9.0
